@@ -1,7 +1,6 @@
 @keyframes spin{
-    0% {rotation: 0deg;}
-    50% {rotation: 180deg;}
-    100% {rotation: 360deg;}
+    from {rotate: 0deg;}
+    to{rotate: 360deg;}
 }
 body{
     background-color: chartreuse;
@@ -9,7 +8,17 @@ body{
 img {
     height: 200px;
     width: 400px;
+    margin-top: 5px;
+    border: solid blue 5px;
+    margin-bottom: 5px;
 }
-img.hover{
-    animation-name: spin 20s linear 0s infinite alternate;
+#pi:hover{
+    animation: spin 20s;
+}
+#pic{
+    filter: invert(100%);
+}
+ul{
+    list-style-type: circle;
+    font: "ComicSans";
 }
